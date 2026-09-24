@@ -2,11 +2,48 @@
 
 (WIP) Don't worry about it
 
+## Installation
+
+Prerequisites:
+
+- python
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
+- [node](https://nodejs.org/en/download)
+- [supabase cli](https://supabase.com/docs/guides/local-development/cli/getting-started)
+
+### Api
+
+(def could change, i dont totally get fastapi)
+
+```
+cd apps/api
+uv run fastapi dev src/main.py
+```
+
+### Web
+
+```
+cd apps/web
+npm install
+npm run dev
+```
+
+### Supabase
+
+From the root dir, run
+
+```
+supabase start
+```
+
+this **should** start the local supabase server and show you the env vars you need.
+
 ## Features
+
 List of features that would be cool to exist in some way
 
 - Creation of flash cards using markdown for front and back
-- authentication with oauth 
+- authentication with oauth
 - main Spaced Repetition System study mode to effectively learn content
 - adding other public cards from other users to your own deck
 - copying other's decks to study (like quizlet)
@@ -24,7 +61,9 @@ List of features that would be cool to exist in some way
 - Turn flashcards into an "exam" like option to give people another way to study. This would probably be just the front of the flash card and the user would have to type the back.
 
 ## Tech stack
+
 May change, but will probably be something like this:
+
 - Fastapi (api)
 - React (web)
 - Postgres
